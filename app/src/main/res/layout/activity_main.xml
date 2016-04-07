@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Send"-->
+        <!--android:id="@+id/sendMessage"-->
+        <!--android:onClick="attemptSend"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true" />-->
+
+
+    <TextView
+        android:id="@+id/LongitudeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:text="Longitude:" />
+
+    <TextView
+        android:id="@+id/lng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/LongitudeText"
+        android:layout_toEndOf="@+id/LongitudeText" />
+
+    <TextView
+        android:id="@+id/LatitudeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Latitude:"
+        android:textSize="20dp"
+        android:layout_below="@+id/lng"
+        android:layout_alignStart="@+id/LongitudeText" />
+
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/LatitudeText"
+        android:layout_alignStart="@+id/lng" />
+
+    <TextView
+        android:id="@+id/BearingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bearing:"
+        android:textSize="20dp"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/lat"
+        android:layout_alignStart="@+id/LatitudeText" />
+
+    <TextView
+        android:id="@+id/brg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/BearingText"
+        android:layout_alignStart="@+id/lat" />
+
+</RelativeLayout>

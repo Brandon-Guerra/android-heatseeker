@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <resources>
+        <!-- idVendor=2341, idProduct=0043 for Arduino Uno R3 -->
+        <usb-device
+            vendor-id="1027"
+            product-id="42705" />
+    </resources>
+</PreferenceScreen>
